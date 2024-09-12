@@ -1,6 +1,3 @@
--- Neo-tree is a Neovim plugin to browse the file system
--- https://github.com/nvim-neo-tree/neo-tree.nvim
-
 return {
   'nvim-neo-tree/neo-tree.nvim',
   version = '*',
@@ -8,6 +5,7 @@ return {
     'nvim-lua/plenary.nvim',
     'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
     'MunifTanjim/nui.nvim',
+    '3rd/image.nvim',
   },
   cmd = 'Neotree',
   keys = {
@@ -19,6 +17,9 @@ return {
         mappings = {
           ['\\'] = 'close_window',
         },
+      },
+      follow_current_file = {
+        enabled = true,
       },
     },
   },
