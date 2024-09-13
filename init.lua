@@ -3,7 +3,7 @@ require 'custom.plugins.general-options'
 require 'custom.plugins.autocommands'
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
@@ -19,7 +19,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
-
   'nvim-tree/nvim-web-devicons',
   require 'custom.plugins.markdown-viewer',
   require 'custom.plugins.code-editing',
