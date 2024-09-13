@@ -22,6 +22,7 @@ require('lazy').setup({
   'nvim-tree/nvim-web-devicons',
   require 'custom.plugins.commentstring',
   require 'custom.plugins.markdown-viewer',
+  require 'custom.plugins.dashboard',
   require 'custom.plugins.code-editing',
   require 'custom.plugins.debug',
   require 'custom.plugins.indent_line',
